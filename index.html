@@ -10,6 +10,9 @@
     <!-- CDN LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
 
+    <!-- GOOGLE FONTS LINK -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:300,400,700" rel="stylesheet">
+
     <!-- CSS LINK -->
     <link rel="stylesheet" href="css/min/main-min.css">
 
@@ -24,56 +27,68 @@
 
       <!-- Header -->
       <header>
-        Multi Bright Forms
+        <h2>Multi Bright Forms</h2>
       </header>
 
       <!-- MainFlexContainer -->
       <div class="mainFlexContainer">
 
-          <h2>Register</h2>
-
         <!-- LeftSide -->
         <div class="leftSide">
 
+          <h2>REGISTER</h2>
+
           <!-- Full Name -->
           <label for="fullName">Full Name:</label>
-          <input id="fullName" type="text" name="fullName" value="Name"><br/>
+          <input id="fullName" type="text" placeholder="Full Name" name="fullName"><br/>
 
           <!-- Date Of Birth -->
           <label for="dateOfBirth">Date Of Birth:</label>
-          <input id="dateOfBirth" type="date" name="dateOfBirth" value="Date Of Birth"><br/>
+          <input id="dateOfBirth" type="date" placeholder="Date Of Birth" name="dateOfBirth"><br/>
 
           <!-- Password -->
           <label for="password">Password:</label>
-          <input id="password" type="password" name="password" value="Password" required><br/>
+          <input id="password" type="password" placeholder="Password" name="password" required><br/>
 
-          <!-- Confirm -->
-          <label for="confirm_password">Confirm:</label>
-          <input id="confirm_password" type="password" name="confirm_password" value="Confirm" required><br/>
+          <!-- Confirm Password-->
+          <label for="confirm_password">Confirm Password:</label>
+          <input id="confirm_password" type="password" placeholder="Confirm Password" name="confirm_password" required><br/>
 
           <!-- Email -->
           <label for="email">Email:</label>
-          <input id="email" type="email" name="email" value="Email"><br/>
+          <input id="email" type="email" placeholder="Email" name="email"><br/>
 
           <!-- Place Of Residence -->
-          <label for="resedence">Place Of Residence:</label>
-          <input id="residence" type="text" name="residence" value="Residence"><br/>
+          <label for="residence">Place Of Residence:</label>
+          <input id="residence" type="text" placeholder="Residence" name="residence"><br/>
+
+          <!-- Register -->
+          <button type="submit" form="signup" value="Register">Register</button>
 
         </div>
         <!-- LeftSide/End -->
 
-        <h2>Login</h2>
-
         <!-- RighSide -->
         <div class="rightSide">
 
+          <h2>LOGIN</h2>
+
           <!-- Full Name -->
-          <label for="userName">Username:</label>
-          <input id="userName" type="text" name="userName" value="User Name" required><br/>
+          <label for="userName">User Name:</label>
+          <input id="userName" type="text" placeholder="User Name" name="userName" required><br/>
 
           <!-- Password -->
           <label for="passwordRight">Password:</label>
-          <input id="passwordRight" type="password" name="passwordRight" value="Password" required><br/>
+          <input id="passwordRight" type="password" placeholder="Password" name="passwordRight" required><br/>
+
+          <!-- Stay Logged In -->
+          <div class="keepLogin">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox"> Stay logged in</label>
+          </div>
+
+          <!-- Register -->
+          <button type="submit" form="signup" value="Login">Login</button>
 
         </div>
         <!-- RighSide/End -->
